@@ -28,7 +28,15 @@ body {
 .candy:hover {
   background-color: rgb(255, 198, 92);
   border-color: rgb(83, 83, 83);
+  animation-name: bounce;
+  animation-duration: 1s;
 }
+@keyframes bounce {
+  0%     { transform: translate(0,0)  }
+  50%    { transform: translate(0,-50px)  }
+  100%   { transform: translate(0,0)  }
+}
+
 .candy img {
   position: absolute;
   width: 200px;
